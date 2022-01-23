@@ -1,0 +1,6 @@
+.Header{
+    display: flex;
+    background-color: #464F79;
+    border-radius: 20px;
+    grid-column:1/3;
+}

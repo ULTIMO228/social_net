@@ -10,9 +10,35 @@
   grid-template-rows: 100px 1fr;
 }
 
-
 .Main{
   grid-column: 2;
   background-color: #464F79;
   border-radius: 20px;
+}
+.ava{
+  margin: 15px;
+  border-radius: 20px;
+  height: 250px;
+}
+.profile{
+  display: flex;
+}
+.name{
+  font-family: 'Bakbak One', cursive;
+  font-size: 31px;
+  color: white;
+  margin-top: 140px;
+  margin-left:25px;
+}
+.posts{
+  font-family: 'Bakbak One', cursive;
+  color: white;
+}
+.mini-ava{
+  height:75px;
+  border-radius: 10px;
+.post{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
 }

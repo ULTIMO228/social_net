@@ -1,0 +1,18 @@
+.Profile__ava{
+    margin: 15px;
+    border-radius: 20px;
+    height: 250px;
+}
+.Profile__profile{
+    display: flex;
+}
+.Profile__name{
+    font-family: 'Bakbak One', cursive;
+    font-size: 31px;
+    color: white;
+}
+.Profile__posts{
+    font-family: 'Bakbak One', cursive;
+    color: white;
+    margin-left: 20px;
+}

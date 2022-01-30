@@ -1,0 +1,11 @@
+.Profile__mini-ava {
+    height: 75px;
+    border-radius: 10px;
+
+}
+.Profile__post{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}

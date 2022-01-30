@@ -1,0 +1,27 @@
+.Messages__messages{
+    display: flex;
+    flex-direction: column;
+}
+.Messages__mini-ava {
+    height: 75px;
+    border-radius: 10px;
+    margin: 0;
+}
+.Messages__post{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+.Messages__user{
+    background-color: #141938;
+    border-radius: 15px;
+    /*border: 3px,solid,black;*/
+    margin: 20px;
+}
+.Messages__name{
+    font-family: 'Bakbak One', cursive;
+    color: white;
+    margin: 20px;
+    font-size: 22px;
+}

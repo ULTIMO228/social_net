@@ -1,3 +1,7 @@
+.Messages{
+    display: flex;
+}
+
 .Messages__messages{
     display: flex;
     flex-direction: column;
@@ -13,7 +17,7 @@
     margin-top: 10px;
 
 }
-.Messages__user{
+.Messages__dialog{
     background-color: #141938;
     border-radius: 15px;
     /*border: 3px,solid,black;*/

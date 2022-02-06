@@ -1,10 +1,11 @@
 import "./Nav.css"
+import {Link} from "react-router-dom";
 export default function Nav() {
     return(
     <nav className="Nav">
-        <a className="Nav-said_i" href="#">Profile</a>
-        <a className="Nav-said_i" href="#">Messages</a>
-        <a className="Nav-said_i" href="#">Users</a>
+        <Link className="Nav-said_i" to="/profile">Profile</Link>
+        <Link className="Nav-said_i" to="/messages">Messages</Link>
+        <Link className="Nav-said_i" to="/users">Users</Link>
 
     </nav>
     )

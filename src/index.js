@@ -4,15 +4,19 @@ import './index.css';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
+import {state} from "./store/store";
 
-ReactDOM.render(
-  <React.StrictMode>
-      <BrowserRouter>
-          <App/>
-      </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+export function render(state){
+    ReactDOM.render(
+        <React.StrictMode>
+            <BrowserRouter>
+                <App state={state}/>
+            </BrowserRouter>
+        </React.StrictMode>,
+        document.getElementById('root')
+    );
+}
+render(state)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

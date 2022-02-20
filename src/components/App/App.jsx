@@ -6,7 +6,7 @@ import Messages from "../Messages/Messages";
 import {Route, Routes} from "react-router-dom";
 import Dialog from "../Dialog/Dialog";
 
-function App() {
+function App(props) {
     return (
         <div className="App">
             <Header/>
@@ -14,9 +14,9 @@ function App() {
             <main className="Main">
                 <Routes>
                     {/*<Route path="/" element={<Profile />} />*/}
-                    <Route path="profile" element={<Profile/>}/>
-                    <Route path="messages" element={<Messages/>}>
-                        <Route path=":dialogId" element={<Dialog/>}/>
+                    <Route path="profile" element={<Profile posts={props.state.posts}/>}/>
+                    <Route path="messages" element={<Messages dialogs={props.state.messages.dialogs}/>}>
+                        <Route path=":dialogId" element={<Dialog dialogs={props.state.messages.dialogs} messages={props.state.messages.messages}/>}/>
                     </Route>
                 </Routes>
             </main>

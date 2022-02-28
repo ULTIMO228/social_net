@@ -19,7 +19,6 @@ export default function Messages(props) {
                         </div>
                     </Link>))}
             </div>
-            <Outlet/>
         </div>
     )
 }

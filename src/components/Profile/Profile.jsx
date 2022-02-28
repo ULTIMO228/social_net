@@ -14,7 +14,7 @@ import React from "react";
             <section className="Profile__posts">
                 <p className="Profile__name">My posts</p>
                 <input type="text" ref={postInput} placeholder="enter the post"/>
-                <button onClick={()=>{alert(postInput.current.value)}}>
+                <button onClick={()=>{props.addPost(postInput.current.value)}}>
                     Add post
                 </button>
                 {Object.entries(props.posts).map(([id,post])=>(<Post text={post.text} key={id}/>))}
